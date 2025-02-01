@@ -32,7 +32,6 @@ export default function Home() {
           <span className="text-[#E00FE0]"> Yatharth</span>
         </div>
         <div> and I am a passionate </div>
-        {/* Fixed span styling to prevent the "|" from appearing on a new line */}
         <div className="inline-flex gap-1 min-w-[200px]">
           <span id="element" className="text-[#E00FE0] whitespace-nowrap" />
         </div>
