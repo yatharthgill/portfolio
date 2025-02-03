@@ -61,7 +61,7 @@ function Page() {
       const response = await axios.post("/api/contact", data);
       toast({
         title: response.data.message,
-        description: "Form Submitted Successfully",
+        description: response.data.description || "Please Check your email",
       })
       console.log("Form submitted successfully");
     } catch {
@@ -82,7 +82,7 @@ function Page() {
   }, [isSubmitSuccessful, reset]);
 
   return (
-    <div className=" px-36 py-10  h-1/4">
+    <div className="p-8 md:px-36 md:py-7  h-1/4">
     <Form {...form}>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
 
