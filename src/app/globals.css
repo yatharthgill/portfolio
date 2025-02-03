@@ -73,3 +73,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+a:hover{
+  color: #E00FE0;
+}
