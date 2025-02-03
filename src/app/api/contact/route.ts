@@ -1,3 +1,4 @@
+import { sendVerificationEmail } from "@/helpers/mailer.";
 import dbConnect from "@/lib/dbconnect";
 import UserModel from "@/model/Usermodel";
 
@@ -13,7 +14,7 @@ export async function POST(request: Request) {
             return new Response(
                 JSON.stringify({
                     success: false,
-                    message: "Email already exists. Contact you soon.",
+                    message: "Email already sent. Contact you soon.",
                 }),
                 { status: 200 }
             );
@@ -27,11 +28,13 @@ export async function POST(request: Request) {
         });
 
         await newUser.save();
+        sendVerificationEmail(email,name);
 
         return new Response(
             JSON.stringify({
                 success: true,
                 message: "Contact you soon.",
+                description:"An email has been sent to you."
             }),
             { status: 200 }
         );

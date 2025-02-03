@@ -61,7 +61,7 @@ function Page() {
       const response = await axios.post("/api/contact", data);
       toast({
         title: response.data.message,
-        description: "Form Submitted Successfully",
+        description: response.data.description || "Please Check your email",
       })
       console.log("Form submitted successfully");
     } catch {
