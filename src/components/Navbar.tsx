@@ -19,16 +19,17 @@ import {
   MenubarSeparator,
   MenubarTrigger,
 } from "@/components/ui/menubar";
-
+import { cn } from "@/lib/utils";
 const Navbar = () => {
   const { setTheme } = useTheme();
-  const { theme } = useTheme();
   return (
-    <div
-      className={`flex justify-between items-center p-8 md:px-36 md:py-7 ${
-        theme === "light" ? "bg-[#f2f2f2]" : "bg-black"
-      }`}
+<div
+      className={cn(
+        "flex justify-between items-center p-8 md:px-36 md:py-7 shadow",
+        "bg-[#f2f2f2] dark:bg-[black]"
+      )}
     >
+
       <div className="logo ">
         <span className="font-[500] text-xl">
           <Link href="/">Yatharth Gill</Link>
