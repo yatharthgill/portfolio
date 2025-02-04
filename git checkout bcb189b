@@ -1,0 +1,28 @@
+[33m2ca6b03[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mmy-recovered-branch[m[33m)[m HEAD@{0}: checkout: moving from my-recovered-branch to 2ca6b03
+[33m2ca6b03[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mmy-recovered-branch[m[33m)[m HEAD@{1}: checkout: moving from 2ca6b038a3cd30fa10bbc7c651324387aa755f59 to my-recovered-branch
+[33m2ca6b03[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mmy-recovered-branch[m[33m)[m HEAD@{2}: checkout: moving from main to 2ca6b03
+[33m5b4b097[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{3}: commit: Email functionality has been added
+[33m2ca6b03[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mmy-recovered-branch[m[33m)[m HEAD@{4}: rebase (finish): returning to refs/heads/main
+[33m2ca6b03[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mmy-recovered-branch[m[33m)[m HEAD@{5}: rebase (start): checkout HEAD~7
+[33m6280795[m HEAD@{6}: commit: Revert "Email functionality has been added"
+[33m8a0c87d[m HEAD@{7}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33m41dc5be[m HEAD@{8}: rebase (finish): returning to refs/heads/main
+[33m41dc5be[m HEAD@{9}: rebase (continue): Email functionality has been added
+[33m82bb0af[m HEAD@{10}: rebase (start): checkout bcb189b^
+[33m67c1177[m HEAD@{11}: rebase (abort): returning to refs/heads/main
+[33m67c1177[m HEAD@{12}: rebase (abort): returning to refs/heads/main
+[33m67c1177[m HEAD@{13}: commit: Revert "Email functionality has been added"
+[33ma8060c6[m HEAD@{14}: commit: Email functionality has been added
+[33mbcb189b[m HEAD@{15}: commit: Email functionality has been added
+[33m82bb0af[m HEAD@{16}: commit: Email functionality has been added
+[33m632966c[m HEAD@{17}: commit: Contact form Responiveness
+[33mf70bebd[m HEAD@{18}: commit: Navbar theme issue fixed
+[33m51b68e8[m HEAD@{19}: pull origin main --rebase (finish): returning to refs/heads/main
+[33m51b68e8[m HEAD@{20}: pull origin main --rebase (pick): Responsiveness added
+[33m2ca6b03[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mmy-recovered-branch[m[33m)[m HEAD@{21}: pull origin main --rebase (start): checkout 2ca6b038a3cd30fa10bbc7c651324387aa755f59
+[33m1340d95[m HEAD@{22}: commit: Responsiveness added
+[33md9bb722[m HEAD@{23}: commit: Title Updated
+[33maa7a61b[m HEAD@{24}: commit: Portfolio created
+[33m7a9bfd4[m HEAD@{25}: Branch: renamed refs/heads/main to refs/heads/main
+[33m7a9bfd4[m HEAD@{27}: commit: first commit
+[33m6e6ed1e[m HEAD@{28}: commit (initial): Initial commit from Create Next App

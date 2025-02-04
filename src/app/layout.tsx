@@ -48,7 +48,7 @@ export default function RootLayout({
             <div className="min-h-[15vh]">
             <Footer />
             </div>
-            
+
           </div>
         </ThemeProvider>
       </body>

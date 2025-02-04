@@ -1,0 +1,130 @@
+
+  
+  .container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    border: 2px solid #E00FE0;
+  }
+
+  .container.active {
+    opacity: 1;
+    transform: translateY(0);
+ 
+  }
+  
+  .textBox {
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+
+  .textBox
+  .leftContainer {
+    left: 0;
+    margin-left: 5px;
+
+  }
+  .circle {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #E00FE0;
+    box-shadow: 0px 0px 30px 5px #E00FE0; 
+}
+
+  .leftCircle {
+    right: -57.5px;
+    top: -45px;
+}
+.leftDate {
+    position: absolute;
+    z-index: 1;
+    right: -30.5px;
+    top: -45px;
+}
+  .rightCircle {
+    left: -71.5px;
+    top: -45px;
+}
+.rightDate {
+    position: absolute;
+    z-index: 1;
+    left: -40.5px;
+    top: -45px;
+}
+  .rightContainer {
+    left: 50%;
+    margin-left: 10px;
+  }
+  
+  .container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+  }
+  
+  .rightContainer img {
+    left: -20px;
+  }
+  
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    margin-top: -32px;
+    height: calc(var(--timeline-height) + 100px);
+    background: #E00FE0;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    transition: height 0.3s ease-out;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .timeline {
+      margin: 50px auto;
+    }
+  
+    .timeline::after {
+      left: 31px;
+    }
+  
+    .container {
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 25px;
+    }
+  
+    .textBox {
+      font-size: 13px;
+    }
+  
+    .textBox small {
+      margin-bottom: 10px;
+    }
+  
+    .rightContainer {
+      left: 0;
+      margin: 0;
+    }
+    .rightCircle , .leftCircle{
+      left: -79px;
+    }
+    .leftDate{
+      left: -41px;
+    }
+    .timeline::after{
+      height: calc(var(--timeline-height));
+    }
+  }
+  
