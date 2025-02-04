@@ -72,7 +72,10 @@ const Education = () => {
             className={`${styles.container} ${
               item.position === "left" ? styles.leftContainer : styles.rightContainer
             } bg-slate-100 dark:bg-black rounded-md my-16 shadow-[0px_0px_10px_#E00FE0] dark:shadow-[0px_0px_10px_#E00FE0]`}
-            ref={(el) => (containersRef.current[index] = el)}
+            ref={(el) => {
+              containersRef.current[index] = el;
+            }}
+            
           >
             <div className={`${styles.textBox} flex flex-col gap-1`}>
               <strong className="pb-1">{item.title}</strong>
