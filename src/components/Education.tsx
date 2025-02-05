@@ -39,7 +39,7 @@ const Education = () => {
       console.log("sp",scrollPosition)
       const newHeight = Math.min(Math.max(scrollPosition - startY, 0), endY - startY);
       console.log("nh",newHeight)
-      setTimelineHeight(newHeight );
+      setTimelineHeight(newHeight -15 );
 
       containersRef.current.forEach((container) => {
         if (!container) return;

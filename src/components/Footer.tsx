@@ -9,10 +9,8 @@ import {
   TwitterIcon,
 } from "lucide-react";
 import Link from "next/link";
-import { useTheme } from "next-themes";
 
 const Footer = () => {
-  const { theme } = useTheme();
   return (
     <div
       className="flex flex-col gap-10 md:gap-0 md:flex-row justify-between  md:items-center p-8 md:px-36 md:py-7"
@@ -45,9 +43,7 @@ const Footer = () => {
             <Link href="https://github.com/yatharthgill" target="_blank">
               <GithubIcon
                 height={22}
-                className={`text-${
-                  theme === "light" ? "black" : "white"
-                } hover:opacity-80`}
+                className="dark:text-white"
               />
             </Link>
           </li>

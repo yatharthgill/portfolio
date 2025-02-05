@@ -36,7 +36,7 @@ const formSchema = z.object({
   }),
 });
 
-function Page() {
+function ContactPage() {
   const { toast } = useToast()
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -83,6 +83,7 @@ function Page() {
 
   return (
     <div className="p-8 md:px-36 md:py-7  h-1/4">
+      <div className="heading text-center text-4xl mb-5">Lets Connect</div>
     <Form {...form}>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
 
@@ -140,4 +141,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default ContactPage;

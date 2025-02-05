@@ -125,6 +125,7 @@
     }
     .timeline::after{
       height: calc(var(--timeline-height));
+      margin-bottom: -100px;
     }
   }
   

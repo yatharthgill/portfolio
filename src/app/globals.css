@@ -90,8 +90,8 @@ a:hover{
   }
 }
 
-.box {
-  position: relative;
+.popup {
+  position: absolute;
   display: none;
   animation: appear 1s ease-in-out forwards;
 
