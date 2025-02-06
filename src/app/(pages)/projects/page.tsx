@@ -55,7 +55,7 @@ export default function ProjectPage() {
           <div
             key={`work-${idx}`}
             className="relative min-h-[500px] max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black
-            dark:border-black hover:border-[#E00FE0] hover:dark:border-[#E00FE0] hover:scale-105 transition-transform duration-300 hover:shadow-[0px_0px_10px_#E00FE0]"
+            dark:border-black hover:border-[#00FFFF] hover:dark:border-[#00FFFF] hover:scale-105 transition-transform duration-300 hover:shadow-[0px_0px_10px_#00FFFF]"
           >
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               <div className="relative w-full h-40">
@@ -81,7 +81,7 @@ export default function ProjectPage() {
             <div className="absolute bottom-5 left-5 p-5">
               <Button
                 asChild
-                className="bg-[#E00FE0] hover:bg-[#C00DC0] text-black hover:text-black dark:hover:text-white dark:text-white hover:shadow-[0px_0px_10px_#E00FE0] border-[#E00FE0] hover:border-[#E00FE0] hover:dark:shadow-[0px_0px_10px_#E00FE0]"
+                className="bg-[#00FFFF] hover:bg-[#47ffff] text-black hover:text-black dark:hover:text-black dark:text-black hover:shadow-[0px_0px_10px_#00FFFF] border-[#00FFFF] hover:border-[#00FFFF] hover:dark:shadow-[0px_0px_10px_#00FFFF]"
               >
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                   View Project

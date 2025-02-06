@@ -71,7 +71,7 @@ const Education = () => {
             key={item.id}
             className={`${styles.container} ${
               item.position === "left" ? styles.leftContainer : styles.rightContainer
-            } bg-slate-100 dark:bg-black rounded-md my-16 shadow-[0px_0px_10px_#E00FE0] dark:shadow-[0px_0px_10px_#E00FE0]`}
+            } bg-slate-100 dark:bg-black rounded-md my-16 shadow-[0px_0px_10px_#00FFFF] dark:shadow-[0px_0px_10px_#00FFFF]`}
             ref={(el) => {
               containersRef.current[index] = el;
             }}

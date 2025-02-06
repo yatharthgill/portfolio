@@ -76,7 +76,7 @@
 
 
 a:hover{
-  color: #E00FE0;
+  color: #00FFFF;
 }
 
 @keyframes appear {
@@ -91,9 +91,8 @@ a:hover{
 }
 
 .popup {
-  position: absolute;
   display: none;
-  animation: appear 1s ease-in-out forwards;
+  animation: appear 2s ease-in-out forwards;
 
 }
 
