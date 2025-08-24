@@ -12,7 +12,7 @@ export default function Home() {
       <Main/>
     
 
-      <div className="mt-40">
+      <div>
         <Education />
       </div>
       <div>

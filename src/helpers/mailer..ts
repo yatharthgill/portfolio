@@ -35,12 +35,10 @@ export async function sendVerificationEmail(email: string, name?: string) {
       html: htmlContent,
     };
 
-    const mailResponse = await transporter.sendMail(mailOptions);
-    console.log("✅ Email sent successfully: %s", mailResponse.messageId);
+    await transporter.sendMail(mailOptions);
 
     return { success: true, message: "Verification email sent successfully" };
-  } catch (error) {
-    console.error("❌ Error Sending Verification Email:", error);
+  } catch {
     return { success: false, message: "Failed to send verification email" };
   }
 }
