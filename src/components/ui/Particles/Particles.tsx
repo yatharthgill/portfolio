@@ -21,7 +21,10 @@ const defaultColors: string[] = ["#ffffff", "#ffffff", "#ffffff"];
 const hexToRgb = (hex: string): [number, number, number] => {
   hex = hex.replace(/^#/, "");
   if (hex.length === 3) {
-    hex = hex.split("").map((c) => c + c).join("");
+    hex = hex
+      .split("")
+      .map((c) => c + c)
+      .join("");
   }
   const int = parseInt(hex, 16);
   const r = ((int >> 16) & 255) / 255;
@@ -106,6 +109,13 @@ const Particles: React.FC<ParticlesProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const mouseRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 
+  const particleColorsRef = useRef(particleColors);
+
+  // Update ref whenever particleColors prop changes
+  useEffect(() => {
+    particleColorsRef.current = particleColors;
+  }, [particleColors]);
+
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -142,7 +152,10 @@ const Particles: React.FC<ParticlesProps> = ({
     const positions = new Float32Array(count * 3);
     const randoms = new Float32Array(count * 4);
     const colors = new Float32Array(count * 3);
-    const palette = particleColors && particleColors.length > 0 ? particleColors : defaultColors;
+    const palette =
+      particleColorsRef.current && particleColorsRef.current.length > 0
+        ? particleColorsRef.current
+        : defaultColors;
 
     for (let i = 0; i < count; i++) {
       let x: number, y: number, z: number, len: number;
@@ -154,7 +167,10 @@ const Particles: React.FC<ParticlesProps> = ({
       } while (len > 1 || len === 0);
       const r = Math.cbrt(Math.random());
       positions.set([x * r, y * r, z * r], i * 3);
-      randoms.set([Math.random(), Math.random(), Math.random(), Math.random()], i * 4);
+      randoms.set(
+        [Math.random(), Math.random(), Math.random(), Math.random()],
+        i * 4
+      );
       const col = hexToRgb(palette[Math.floor(Math.random() * palette.length)]);
       colors.set(col, i * 3);
     }
@@ -236,10 +252,7 @@ const Particles: React.FC<ParticlesProps> = ({
   ]);
 
   return (
-    <div
-      ref={containerRef}
-      className={`relative w-full h-full ${className}`}
-    />
+    <div ref={containerRef} className={`relative w-full h-full ${className}`} />
   );
 };
 
