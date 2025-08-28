@@ -17,7 +17,7 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
+} from "../../../components/ui/form";
 import { Input } from "../../../components/ui/input";
 
 // --- Zod Schema ---
