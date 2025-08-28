@@ -1,4 +1,4 @@
-import { sendVerificationEmail } from "@/helpers/mailer.";
+import { sendVerificationEmail } from "@/helpers/mailer";
 import dbConnect from "@/lib/dbconnect";
 import UserModel from "@/model/Usermodel";
 
