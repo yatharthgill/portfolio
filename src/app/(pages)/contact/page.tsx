@@ -7,9 +7,9 @@ import axios from "axios";
 import { motion, Variants } from "framer-motion";
 import React, { useEffect, useState, useRef } from "react";
 import { Loader2 } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { useToast } from "../../../hooks/use-toast";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../components/ui/button";
 import {
   Form,
   FormControl,
@@ -18,7 +18,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+import { Input } from "../../../components/ui/input";
 
 // --- Zod Schema ---
 const formSchema = z.object({

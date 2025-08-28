@@ -1,6 +1,6 @@
 "use client";
-import Education from "@/components/Education";
-import Main from "@/components/Main";
+import Education from "../components/Education";
+import Main from "../components/Main";
 import ContactPage from "./(pages)/contact/page";
 import ProjectPage  from "./(pages)/projects/page";
 
