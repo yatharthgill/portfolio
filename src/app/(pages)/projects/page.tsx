@@ -21,37 +21,61 @@ interface ProjectCardProps {
 // --- Data for the projects ---
 const workExperience: Project[] = [
     {
-      title: "Mystry Message",
-      image: "/mystryMessage.png",
-      description:
-        "A Next.js app with authentication and OTP verification. Users can share a profile link to receive anonymous messages.",
-      link: "https://nextjs-liard-nine-48.vercel.app/",
-      badge: "NextJs",
-    },
-    {
-      title: "CoreNetworking Classes",
-      image: "/cnc.png",
-      description:
-        "Contributed to a live project by designing the footer, enhancing the testimonial section, and modifying the entry form.",
-      link: "https://www.corenetworkingclasses.com/",
-      badge: "Web Design",
-    },
-    {
-      title: "TechHub Technology",
-      image: "/techhub.png",
-      description:
-        "Designed and developed the company's website using HTML, CSS, JavaScript, and PHP during an internship.",
-      link: "https://techhubtechnology.com/",
-      badge: "Full Stack",
-    },
-    {
-      title: "Text Utils",
-      image: "/textutil.png",
-      description:
-        "A React-based text utility app for converting text to uppercase, lowercase, copying text, and more.",
-      link: "#",
-      badge: "React",
-    },
+    title: "ReelsApp",
+    image: "/ReelsApp.png",
+    description:
+      "A full-stack social media platform built with Next.js and TypeScript featuring vertical video feeds, user profiles, authentication, and social interactions.",
+    link: "https://reelsapp-fzid.onrender.com/",
+    badge: "Next.js",
+  },
+  {
+    title: "JobApp",
+    image: "/JobApp.png",
+    description:
+      "A full-stack job application platform using FastAPI, React, and MongoDB with automated job scraping and AI-powered resume-to-job matching.",
+    link: "https://aijobapp.netlify.app",
+    badge: "FastAPI",
+  },
+  {
+    title: "WorkoutBuddy",
+    image: "/WorkOutBuddy.png",
+    description:
+      "A fitness management system built with FastAPI and Django for tracking workouts, diet plans, user profiles, and personalized recommendations.",
+    link: "https://workoutbuddy-frontend-r4f7.onrender.com/",
+    badge: "FastAPI",
+  },
+  {
+    title: "Mystry Message",
+    image: "/mystryMessage.png",
+    description:
+      "A Next.js app with authentication and OTP verification. Users can share a profile link to receive anonymous messages.",
+    link: "https://nextjs-liard-nine-48.vercel.app/",
+    badge: "NextJs",
+  },
+  {
+    title: "CoreNetworking Classes",
+    image: "/cnc.png",
+    description:
+      "Contributed to a live project by designing the footer, enhancing the testimonial section, and modifying the entry form.",
+    link: "https://www.corenetworkingclasses.com/",
+    badge: "Web Design",
+  },
+  {
+    title: "TechHub Technology",
+    image: "/techhub.png",
+    description:
+      "Designed and developed the company's website using HTML, CSS, JavaScript, and PHP during an internship.",
+    link: "https://techhubtechnology.com/",
+    badge: "Full Stack",
+  },
+  {
+    title: "Text Utils",
+    image: "/textutil.png",
+    description:
+      "A React-based text utility app for converting text to uppercase, lowercase, copying text, and more.",
+    link: "#",
+    badge: "React",
+  },
 ];
 
 // --- Animation Variants ---

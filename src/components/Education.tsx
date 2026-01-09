@@ -17,16 +17,16 @@ interface TimelineItemData {
 const timelineData: TimelineItemData[] = [
   {
     id: 1,
-    title: "High School Diploma",
+    title: "High School",
     date: "2019",
-    description: "Spring Fields College",
+    description: "SpringFields College, Moradabad",
     position: "left",
   },
   {
     id: 2,
-    title: "Intermediate Degree",
+    title: "Intermediate",
     date: "2021",
-    description: "Spring Fields College",
+    description: "SpringFields College, Moradabad",
     position: "right",
   },
   {
@@ -46,7 +46,7 @@ const timelineData: TimelineItemData[] = [
   {
     id: 5,
     title: "Software Development Intern",
-    date: "Summer 2025",
+    date: "June 2025 - August 2025",
     description: "MetaSquare Technologies Pvt. Ltd.",
     position: "left",
   },

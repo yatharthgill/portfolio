@@ -28,7 +28,18 @@ export async function POST(request: Request) {
         });
 
         await newUser.save();
-        sendVerificationEmail(email,name);
+        const emailResult = await sendVerificationEmail(email, name);
+
+            if (!emailResult.success) {
+                return new Response(
+                    JSON.stringify({
+                        success: false,
+                        message: "Failed to send email. Please try again later."
+                    }),
+                    { status: 500 }
+                );
+            }
+
 
         return new Response(
             JSON.stringify({
