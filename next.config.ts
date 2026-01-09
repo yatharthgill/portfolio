@@ -1,14 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Ensure TypeScript path mapping works in production builds
   typescript: {
-    // Don't fail build on type errors (but still show them)
+    // Fail the build on type errors (recommended for production)
     ignoreBuildErrors: false,
-  },
-  eslint: {
-    // Don't fail build on ESLint errors during deployment
-    ignoreDuringBuilds: true,
   },
 };
 
