@@ -20,10 +20,9 @@ const navItems = [
   { name: "Projects", href: "/projects" },
   {
     name: "Resume",
-    href: "https://drive.google.com/file/d/1NrTh3IxPXp86aPCt1jNYl5ZhKD2ax2Cz/view?usp=drive_link",
+    href: "https://drive.google.com/file/d/1KUUcPgaMxth7jwmUVmxJemh_48BSUPCF/view?usp=sharing",
     target: "_blank",
   },
-  { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
 
